@@ -19,7 +19,11 @@ const BodyE = () => {
               </p>
               <p>
                 Lorem ipsum
-                <img src="solar_arrow-up-linear.png" alt="arrow" width="35px" />
+                <img
+                  src="/solar_arrow-up-linear.png"
+                  alt="arrow"
+                  width="35px"
+                />
               </p>
             </div>
           </div>
