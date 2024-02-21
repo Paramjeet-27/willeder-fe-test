@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import BodyH from "../../components/BodyH/BodyH";
 import BodyL from "../../components/BodyL/BodyL";
+import BodyE from "../../components/BodyE/BodyE";
 
 const LandingPage = () => {
   return (
@@ -11,6 +12,7 @@ const LandingPage = () => {
       <div className={styles.conatiner}>
         <BodyH />
         <BodyL />
+        <BodyE />
         <nav className={styles.navBar}>
           <NavBar />
         </nav>
