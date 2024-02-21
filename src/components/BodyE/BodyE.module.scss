@@ -89,7 +89,6 @@
     display: none;
   }
   .subContainer {
-    border: solid 2px black;
     padding: 0rem 64px 0rem 0rem;
     display: flex;
     justify-content: space-between;
@@ -127,7 +126,6 @@
     color: rgba(0, 0, 0, 0.8);
     margin: 1rem 0rem 2rem 0rem;
     padding: 0px 0px 0px 16px;
-    border: solid 1px green;
   }
   .description > p:nth-child(4) {
     font-family: Noto Sans;
