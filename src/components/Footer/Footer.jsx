@@ -12,16 +12,16 @@ const Footer = () => {
           </div>
           <div className={styles.socialIcons}>
             <p>
-              <img src="facebook.png" alt="facebook" />
+              <img src="/facebook.png" alt="facebook" />
             </p>
             <p>
-              <img src="twitter.png" alt="twitter" />
+              <img src="/twitter.png" alt="twitter" />
             </p>
             <p>
-              <img src="instagram.png" alt="instasgram" />
+              <img src="/instagram.png" alt="instasgram" />
             </p>
             <p>
-              <img src="tiktok.png" alt="tiktok" />
+              <img src="/tiktok.png" alt="tiktok" />
             </p>
           </div>
           <p>Logo. Inc.</p>

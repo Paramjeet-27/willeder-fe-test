@@ -11,7 +11,7 @@ const NavBar = () => {
           <p>Page2</p>
         </div>
         <div className={styles.mobileBars}>
-          <img src="Group3546.png" alt="hamburger" />
+          <img src="/Group3546.png" alt="hamburger" />
         </div>
       </nav>
     </>
