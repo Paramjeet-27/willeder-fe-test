@@ -1,6 +1,7 @@
 import styles from "./LandingPage.module.scss";
 import ColoredBox from "../../components/ColoredBox/ColoredBox";
 import NavBar from "../../components/NavBar/NavBar";
+import Footer from "../../components/Footer/Footer";
 
 const LandingPage = () => {
   return (
@@ -13,6 +14,9 @@ const LandingPage = () => {
           <ColoredBox />
         </div>
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
