@@ -1,0 +1,129 @@
+@keyframes carousel {
+  0% {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 26.56%,
+        rgba(0, 0, 0, 0.75) 71.35%
+      ),
+      url("7259f8ece71ae230e41c3a2c6709f5db.jpeg");
+  }
+  50% {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 26.56%,
+        rgba(0, 0, 0, 0.75) 71.35%
+      ),
+      url("46b2300f00a14d64a977ec879165fcc1.jpeg");
+  }
+  100% {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 26.56%,
+        rgba(0, 0, 0, 0.75) 71.35%
+      ),
+      url("044cb65dd089cf0863aeb45d88915340.jpeg");
+  }
+}
+
+.outerContainer {
+  height: 1080px;
+  animation: carousel 10s linear 0s infinite;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 80%;
+  height: 30%;
+  background-image: url("Logo1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container > p:nth-child(2) {
+  color: white;
+  background: rgba(106, 69, 255, 1);
+  width: 100%;
+  text-align: center;
+  font-family: Noto Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.3em;
+  margin: 3rem 0rem 2rem 0rem;
+}
+.container > p:nth-child(3) {
+  color: rgba(255, 255, 255, 1);
+  font-family: Noto Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  width: 60%;
+  margin-bottom: 4.5rem;
+}
+
+.scrollItem > p {
+  color: rgba(255, 255, 255, 1);
+  font-family: Noto Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.lineBelowScroll {
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 400px) {
+  .outerContainer {
+    border: solid 2px black;
+    height: 800px;
+  }
+  .container {
+    height: 500px;
+  }
+  .logo {
+    width: 80%;
+    height: 30%;
+    background-image: url("Logo1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .container > p:nth-child(2) {
+    background: transparent;
+  }
+  .container > p:nth-child(3) {
+    color: rgba(255, 255, 255, 1);
+    font-family: Noto Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.3em;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+  .scrollItem > p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+}
