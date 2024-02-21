@@ -1,0 +1,61 @@
+$triangle-size: 75px;
+$container-size: 150px;
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: $container-size;
+  height: $container-size;
+  margin: auto;
+  position: relative;
+  transform-origin: center;
+  animation: logoAnimation 10s linear 0s infinite;
+}
+
+@mixin coloredSquare() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: solid $triangle-size transparent;
+  border-left: solid $triangle-size transparent;
+  border-right: solid $triangle-size transparent;
+  border-bottom: solid $triangle-size transparent;
+}
+
+.blue {
+  @include coloredSquare();
+  border-left: solid 75px blue;
+}
+
+.green {
+  @include coloredSquare();
+  border-top: solid 75px green;
+}
+
+.yellow {
+  @include coloredSquare();
+  border-right: solid 75px yellow;
+}
+
+.red {
+  @include coloredSquare();
+  border-bottom: solid 75px red;
+}

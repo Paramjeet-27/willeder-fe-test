@@ -1,9 +1,10 @@
 import "./App.scss";
+import LandingPage from "./pages/LandingPage/LandingPage";
 
 function App() {
   return (
     <>
-      <h1>Application Level</h1>
+      <LandingPage />
     </>
   );
 }
